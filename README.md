@@ -1,2 +1,2 @@
-# BHAsteroids
-Juego Bullet Hell 2D versionado de Asteroids
+# BH Cell Hell
+Juego Bullet Hell 2D
