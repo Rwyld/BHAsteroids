@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private float limitex = 38;
     private float limitey = 21;
 
-    public void PlayerTakeDamage(int damage)
+    public void PlayerTakeDamage(float damage)
     {
         curHealth--;
         if (curHealth <= 0)
