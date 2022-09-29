@@ -103,6 +103,7 @@ MonoBehaviour:
   speed: 20
   timeDestroy: 2.5
   rb: {fileID: 3192218599864843708}
+  pc: {fileID: 0}
 --- !u!50 &3192218599864843708
 Rigidbody2D:
   serializedVersion: 4

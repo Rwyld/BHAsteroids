@@ -7,9 +7,14 @@ public class ShootController : MonoBehaviour
     public Camera camera_;
     public GameObject pl_proyectile;
     public Transform shootPoint;
+    public float timeDestroy = 2.5f;
+    public float timeDelay = 1f;
+    public float timeReset = 0.2f;
+
 
     private void FixedUpdate()
     {
+        Timer();
         MouseRotation();
         Shoot();
     }
@@ -34,13 +39,19 @@ public class ShootController : MonoBehaviour
 
     private void Shoot()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && timeDelay <= 0)
         {
-            Instantiate(pl_proyectile, shootPoint.position, shootPoint.rotation);
+            GameObject playerProyectile = Instantiate(pl_proyectile);
+            playerProyectile.transform.position = shootPoint.position;
+            playerProyectile.transform.rotation = shootPoint.rotation;
+            Destroy(playerProyectile, timeDestroy);
+            timeDelay = timeReset;
         }
-
-
     }
 
+    private void Timer()
+    {
+        timeDelay -= Time.deltaTime;
+    }
 }
 

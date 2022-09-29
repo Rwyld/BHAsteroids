@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody rb;
+    public Rigidbody2D rb;
+    public GameManager GM;
     [SerializeField, Range(0,100)] private float speed;
     public float maxHealth = 100;
     public float curHealth;
@@ -14,20 +15,21 @@ public class PlayerController : MonoBehaviour
     private float limitex = 38;
     private float limitey = 21;
 
+
     public void PlayerTakeDamage(float damage)
     {
-        curHealth--;
+        curHealth -= damage;
         if (curHealth <= 0)
         {
             //Animacion
             //TimeDelay
-            //UI Game Over 
+            GM.RestartGame();
         }
     }
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         curHealth = maxHealth;
     }
 
