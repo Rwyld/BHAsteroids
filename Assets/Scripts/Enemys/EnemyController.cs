@@ -8,32 +8,27 @@ public class EnemyController : MonoBehaviour
     public float speed;
     public float timeFlip = 2f;
     public bool SetActive = true;
-    public GameObject en_proyectile;
     public GameObject drop;
     public int drops;
     public Rigidbody2D rb;
-    public Transform spawn;
-    public Transform py_spawn;
-    public GameObject target;
-    public bool isVer;
-    public bool isHor;
-    public bool rightLeft;
-    public bool upDown;
-    public float targetAttack;
-    public float timeDelay;
-    public float timeReset;
     public float timeDestroy;
+    public float timeLiving;
+    public Vector2 bounds;
 
+
+    
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player");
-        Destroy(gameObject, 8f);
+        rb = GetComponent<Rigidbody2D>();
+        bounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        Rotate();
     }
 
     void Update()
     {
-        TargetAttack();
-        Move();
+        MoveTo();
+        OutCamera();
+        
     }
 
     public void TakeDamage(float damage)
@@ -47,47 +42,46 @@ public class EnemyController : MonoBehaviour
                 Instantiate(drop, transform.position, Quaternion.identity);
             }
 
-            Destroy(gameObject);
+            Destroy(gameObject,timeDestroy);
         }
     }
 
-    private void Move()
+    private void OutCamera()
     {
-        if (isVer == true && upDown == true)
+        Vector2 boundsX = bounds * 1.5f;
+        if(transform.position.x < -boundsX.x || transform.position.y < -boundsX.y || transform.position.x > boundsX.x || transform.position.y > boundsX.y)
         {
-            transform.position += new Vector3(0f, -1f * speed * Time.fixedDeltaTime, 0f);
+            Destroy(this.gameObject);
         }
-        if (isVer == true && upDown == false)
+    }
+    
+    private void MoveTo()
+    {
+        Look();
+        float dir = Vector2.Distance(GameManager.instance.player.transform.position, transform.position);
+        if (dir > 15f)
         {
-            transform.position += new Vector3(0f, 1f * speed * Time.fixedDeltaTime, 0f);
-        }
-        if (isHor == true && rightLeft == true)
-        {
-            transform.position += new Vector3(-1f * speed * Time.fixedDeltaTime, 0f, 0f);
-        }
+            transform.position = Vector2.MoveTowards(transform.position, GameManager.instance.player.transform.position, speed * Time.deltaTime);
 
-        if (isHor == true && rightLeft == false)
+        }
+        else
         {
-            transform.position += new Vector3(1f * speed * Time.fixedDeltaTime, 0f, 0f);
+            transform.position = Vector2.MoveTowards(transform.position, GameManager.instance.player.transform.position, 0.5f * Time.deltaTime);
+            
         }
     }
 
-    private void TargetAttack()
+    private void Look()
     {
-        targetAttack = Vector2.Distance(target.transform.position, transform.position);
-        
-        if (targetAttack <= 50)
-        {
-            timeDelay -= Time.deltaTime;
+        Quaternion rotation = Quaternion.LookRotation(GameManager.instance.player.transform.position - transform.position, transform.TransformDirection(Vector3.up));   
+        transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);
 
-            if (timeDelay <= 0)
-            {
-                GameObject enemyProyectile = Instantiate(en_proyectile);
-                enemyProyectile.transform.position = py_spawn.position;
-                enemyProyectile.transform.rotation = py_spawn.rotation;
-                Destroy(enemyProyectile, timeDestroy);
-                timeDelay = timeReset;
-            }
+    }
+    private void Rotate()
+    {
+        if (transform.position.x > GameManager.instance.player.transform.position.x)
+        {
+            transform.Rotate(0f, 0f, 180f);
         }
     }
 }

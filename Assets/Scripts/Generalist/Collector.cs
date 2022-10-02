@@ -5,12 +5,12 @@ using UnityEngine;
 public class Collector : MonoBehaviour
 {
     public int points = 1;
-    public GameObject player;
+    //public GameObject player;
     public float speed = 20f;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void Update()
@@ -20,7 +20,7 @@ public class Collector : MonoBehaviour
 
     public void Move()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, GameManager.instance.player.transform.position, speed * Time.deltaTime);
         speed *= 1.05f;
     }
 

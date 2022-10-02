@@ -182,11 +182,16 @@ MonoBehaviour:
   timeFlip: 2
   SetActive: 1
   en_proyectile: {fileID: 2907068404777984203, guid: cda011e6ef2527145acbf5dea5f45d4e, type: 3}
+  drop: {fileID: 4837459394522070269, guid: 44db2d0c745a3ef4b8f47dd61a89da0d, type: 3}
+  drops: 0
   rb: {fileID: 2445619587990522508}
   spawn: {fileID: 0}
   py_spawn: {fileID: 2445619587481742506}
   target: {fileID: 0}
-  isVertical: 1
+  isVer: 0
+  isHor: 0
+  rightLeft: 0
+  upDown: 0
   targetAttack: 0
   timeDelay: 0.5
   timeReset: 0.5
