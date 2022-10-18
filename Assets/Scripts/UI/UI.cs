@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour
 {
+    public Animator animator;
+    public string sceneName;
+
+
+
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        StartCoroutine(NextScene());
     }
     public void QuitGame()
     {
@@ -15,6 +20,11 @@ public class UI : MonoBehaviour
         //Application.Quit();
     }
 
-
+    public IEnumerator NextScene()
+    {
+        animator.SetTrigger("Start");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(sceneName);
+    }
 
 }

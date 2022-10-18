@@ -14,9 +14,14 @@ public class EnemyController : MonoBehaviour
     public float timeDestroy;
     public float timeLiving;
     public Vector2 bounds;
+    public AudioSource death;
 
 
-    
+    private void Awake()
+    {
+        death.Pause();
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,7 +33,6 @@ public class EnemyController : MonoBehaviour
     {
         MoveTo();
         OutCamera();
-        
     }
 
     public void TakeDamage(float damage)
@@ -36,12 +40,13 @@ public class EnemyController : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            Score.instance.EnemyCount(1);
+            death.Play();
             drops = Random.Range(1, 3);
             for (int i = 0; i < drops; i++)
             {
                 Instantiate(drop, transform.position, Quaternion.identity);
             }
-
             Destroy(gameObject,timeDestroy);
         }
     }

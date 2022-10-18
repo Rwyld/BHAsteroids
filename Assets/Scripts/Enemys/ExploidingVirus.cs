@@ -9,11 +9,13 @@ public class ExploidingVirus : MonoBehaviour
     public GameObject en_proyectile;
     public float timeDelay;
     public float timeReset;
+    public Collider2D virusCol;
 
     private void Exploid()
     {
         if (ec.health <= 0)
         {
+            virusCol.enabled = false;
             for (int i = 0; i < spawn.Length; i++)
             {
                 GameObject proyectile = Instantiate(en_proyectile);

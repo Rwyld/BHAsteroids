@@ -9,7 +9,7 @@ public class AttackEnemy : MonoBehaviour
     public float timeDelay;
     public float timeReset;
     public float timeDestroy;
-    public Transform py_spawn;
+    public Transform[] py_spawn;
 
     private void TargetAttack()
     {
@@ -21,11 +21,15 @@ public class AttackEnemy : MonoBehaviour
 
             if (timeDelay <= 0)
             {
-                GameObject enemyProyectile = Instantiate(en_proyectile);
-                enemyProyectile.transform.position = py_spawn.position;
-                enemyProyectile.transform.rotation = py_spawn.rotation;
-                Destroy(enemyProyectile, timeDestroy);
-                timeDelay = timeReset;
+               for (int i = 0; i < py_spawn.Length; i++)
+                {
+                    GameObject enemyProyectile = Instantiate(en_proyectile);
+                    enemyProyectile.transform.position = py_spawn[i].position;
+                    enemyProyectile.transform.rotation = py_spawn[i].rotation;
+                    Destroy(enemyProyectile, timeDestroy);
+                    timeDelay = timeReset;
+                }
+                
             }
         }
     }

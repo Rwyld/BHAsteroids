@@ -1,0 +1,861 @@
+fileFormatVersion: 2
+guid: 62a2be9c8b85dfd4c87d9274e4b166a8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DropsSheet_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1027
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2afab3ab1fb6248b05f86119c41b45
+      internalID: -667806737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_1
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1032
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13ddffb5d9b0bb428556bc96d54fa6b
+      internalID: 2122130029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_2
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1023
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ac7b85f4731b94f804ef50b50ecfac
+      internalID: 1138206657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_3
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1027
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b675c764a1165bd4095fd8f9d7f69bec
+      internalID: 184487952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1020
+        width: 158
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c89d5d59cd54684aaaf5654396981cc
+      internalID: -155758967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1015
+        width: 158
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e45034d5bb0c9942bcd9d9cdc0015a0
+      internalID: -905714236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 1016
+        width: 105
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9d972eed762054e9b160a5c305b29c
+      internalID: 572827890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 1016
+        width: 105
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfc3d601259846409613acb279345d3
+      internalID: -1199768311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_8
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 698
+        width: 23
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe55c81fcc4b62442b708793bed99991
+      internalID: -455979722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_9
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 691
+        width: 23
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad99548f952fb743a59c60cd6b28bfa
+      internalID: -1687966246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_10
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 691
+        width: 66
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2d90b7aa5156042acee1eb1421d783
+      internalID: 1754351363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_11
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 697
+        width: 66
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb61f879f0501a4f8887c73b710f119
+      internalID: 758201211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_12
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 694
+        width: 66
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5fd907acd7f174e9c6eec42c8b9328
+      internalID: 1817962323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_13
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 706
+        width: 136
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2a7d2daee49924fa79aee3731d9e1c
+      internalID: -1871738690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 705
+        width: 136
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89af12bc328272e4f8b1a1e134f59b50
+      internalID: -321655853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 697
+        width: 171
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d226fb12bd8f9fa478eb85568ecca539
+      internalID: 199351777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 685
+        width: 172
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51387bfc10a5ac2498fb359d9885e52f
+      internalID: -1359129844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_17
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 412
+        width: 172
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db993833f966b344790b7424e7cc6ffb
+      internalID: -144906885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_18
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 402
+        width: 171
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647b05d017f2fa644b97739dec7deb38
+      internalID: -1947373227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_19
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 404
+        width: 170
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c92daa1838bae49acc23674da0131b
+      internalID: 369114535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_20
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 402
+        width: 136
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ba09ad816871e49abdd8504e326c30
+      internalID: -1194632766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 409
+        width: 136
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a03a2010f02c84480948d1c12897f1
+      internalID: 661708451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 403
+        width: 136
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167ca46cf39dd654286c81bac82b444a
+      internalID: 482845444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 402
+        width: 67
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c08a38b502e0614ab48edec9a54c6ff
+      internalID: 1888234473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 399
+        width: 67
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82dd643e261d59c408f3d0e07518070b
+      internalID: -1693571539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_25
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 133
+        width: 24
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d288cd07178394b4e9e7f023893478f2
+      internalID: 416579734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_26
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 139
+        width: 24
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9ea30225ccc0e469c530fe7b07c76b
+      internalID: -1582119180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_27
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 145
+        width: 24
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeedaf697a177994bb59149360a318fd
+      internalID: -871899640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_28
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 128
+        width: 104
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02b93b22ba610844a0af445d88d574e
+      internalID: 1168748978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_29
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 140
+        width: 105
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7186805bb30b1db4984c3f9d2904e27c
+      internalID: 645562903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_30
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 124
+        width: 158
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b573118e4365b764fa622e9b791b21b2
+      internalID: -923109481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 111
+        width: 158
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d156dd432761914d91394dcbba393eb
+      internalID: 651100531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropsSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 101
+        width: 158
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a082492cc5fdf404f85d35c3d3882c9e
+      internalID: 165576840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2903af49805370a40be570a5eb16bfa4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DropsSheet_12: 1817962323
+      DropsSheet_15: 199351777
+      DropsSheet_6: 572827890
+      DropsSheet_27: -871899640
+      DropsSheet_16: -1359129844
+      DropsSheet_25: 416579734
+      DropsSheet_17: -144906885
+      DropsSheet_22: 482845444
+      DropsSheet_2: 1138206657
+      DropsSheet_28: 1168748978
+      DropsSheet_11: 758201211
+      DropsSheet_9: -1687966246
+      DropsSheet_18: -1947373227
+      DropsSheet_32: 165576840
+      DropsSheet_30: -923109481
+      DropsSheet_13: -1871738690
+      DropsSheet_8: -455979722
+      DropsSheet_29: 645562903
+      DropsSheet_4: -155758967
+      DropsSheet_14: -321655853
+      DropsSheet_7: -1199768311
+      DropsSheet_24: -1693571539
+      DropsSheet_26: -1582119180
+      DropsSheet_23: 1888234473
+      DropsSheet_0: -667806737
+      DropsSheet_1: 2122130029
+      DropsSheet_3: 184487952
+      DropsSheet_31: 651100531
+      DropsSheet_19: 369114535
+      DropsSheet_10: 1754351363
+      DropsSheet_5: -905714236
+      DropsSheet_21: 661708451
+      DropsSheet_20: -1194632766
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
